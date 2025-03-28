@@ -1,0 +1,166 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Современный шрифт */
+    background-color: #2e2e2e; /* Темно-серый фон, имитирующий ночной режим */
+    color: #eaeaea; /* Светлый цвет для текста */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #9b59b6; /* Фиолетовый для заголовков */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem; /* Уменьшаем размер h1 */
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.6rem; /* Уменьшаем размер h2 */
+    margin-bottom: 15px;
+}
+
+h3 {
+    text-align: left;
+    font-size: 1.1rem; /* Уменьшаем размер h3 */
+    color: #ddd; /* Светло-серый для менее важных заголовков */
+    margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+img {
+    display: block;  /* Делает изображение блочным элементом */
+    margin: 20px auto;  /* Центрирует изображение по горизонтали */
+    max-width: 40%;  /* Ограничивает максимальную ширину до 80% от контейнера */
+    height: auto;  /* Сохраняет пропорции изображения */
+    border-radius: 8px;  /* Скругляет углы для красивого вида */
+}
+
+/* Ссылки */
+a {
+    text-decoration: none;
+    color: #9b59b6; /* Фиолетовые ссылки */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #eaeaea; /* Светлый фиолетовый при наведении */
+    text-decoration: underline;
+}
+
+/* Секция */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #353535; /* Темный фон для блоков */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для глубины */
+}
+
+/* Список */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    background-color: #444; /* Темно-серый фон для элементов списка */
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #5e4b8b; /* Мягкое фиолетовое выделение */
+}
+
+/* Кнопки */
+button {
+    background-color: #9b59b6; /* Фиолетовая кнопка */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #8e44ad; /* Темный фиолетовый при наведении */
+    transform: scale(1.05);
+}
+
+/* Навигация */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-size: 1.1rem;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    color: #9b59b6; /* Фиолетовый цвет при наведении на ссылку в навигации */
+}
+
+/* Подвал */
+footer {
+    position: fixed;
+    bottom: 10px; /* Расположить внизу */
+    right: 20px; /* Отступ от правого края */
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Легкая тень для футера */
+}
+
+footer a {
+    color: #9b59b6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Стиль ссылок и кнопок на мобильных */
+a, button {
+    font-size: 1.2rem;
+}
