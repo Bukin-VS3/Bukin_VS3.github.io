@@ -1,0 +1,17 @@
+User-agent: *  # директива для всех роботов
+
+Allow: /index.htm # явно разрешаем индексацию главной страницы, однако остальные по умолчанию доступны, т.к. нет в Disallow
+
+
+Disallow: /tmp/ # запрещаем технические разделы 
+Disallow: /admin/
+Disallow: /cgi-bin/
+
+
+Sitemap: https://bukin-vs3.github.io/Bukin_VS3.github.io/sitemap.xml # указываем ссылку на карту сайта 
+
+
+Crawl-delay: 10 # пауза между обходами, чтобы сайт не перегружался ботами
+
+
+Host: bukin-vs3.github.io # уккзываем домен (для Яндекса)
